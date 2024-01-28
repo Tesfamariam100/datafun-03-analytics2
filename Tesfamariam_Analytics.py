@@ -82,3 +82,17 @@ if not os.path.exists(directory_path):
     print(f"Directory '{directory_path}' created successfully")
 else:
     print(f"Directory '{directory_path}' already exists")
+
+import os
+
+# Define the directory paths
+root_folder = 'C:/Users/Tesfamariam/datafun-03-analysis2'
+txt_folder_name = 'data-txt'
+
+# Create the directory if it doesn't exist
+directory_path = os.path.join(root_folder, txt_folder_name)
+if not os.path.exists(directory_path):
+    os.makedirs(directory_path)
+    print(f"Directory '{directory_path}' created successfully")
+else:
+    print(f"Directory '{directory_path}' already exists")
