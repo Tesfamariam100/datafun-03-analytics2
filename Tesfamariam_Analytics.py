@@ -26,6 +26,7 @@ def fetch_and_write_txt_data(folder_name, filename, url):
     else:
         print(f"Failed to fetch text data from {url}")
 
+
 # Function to fetch and write CSV data
 def fetch_and_write_csv_data(folder_name, filename, url):
     response = requests.get(url)
@@ -68,3 +69,16 @@ fetch_and_write_txt_data(txt_folder_name, txt_filename, txt_url)
 fetch_and_write_csv_data(csv_folder_name, csv_filename, csv_url)
 fetch_and_write_json_data(json_folder_name, json_filename, json_url)
 
+import os
+
+# Define the directory paths
+root_folder = 'C:/Users/Tesfamariam/datafun-03-analysis2'
+txt_folder_name = 'data-txt'
+
+# Create the directory if it doesn't exist
+directory_path = os.path.join(root_folder, txt_folder_name)
+if not os.path.exists(directory_path):
+    os.makedirs(directory_path)
+    print(f"Directory '{directory_path}' created successfully")
+else:
+    print(f"Directory '{directory_path}' already exists")
