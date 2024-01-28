@@ -7,7 +7,7 @@ from pathlib import Path
 import requests
 
 b ot_foldfolder names and filenames
-ers/Tesfamariam/datafun-03-analysis2'
+C:/Users/Tesfamariam/datafun-03-analysis2'
 txt_folder_name = 'data-txt'
 
 txt_filename = 'data.txt'
